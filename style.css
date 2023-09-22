@@ -4,3 +4,38 @@
     Cal State Fullerton
     Purpose: Design of the Calculator
 */
+
+.CalcBody{
+    width: 400px;
+    height: 500px;
+    border-color: black;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 10px;
+}
+
+.CalcDisplay{
+    width: 350px;
+    height: 80px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    left: 20px;
+    top: 25px;
+    position: relative;
+}
+
+.CalcNumButton{
+    padding: 35px 35px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.CalcNumButton:hover{
+    background-color: orange;
+}
