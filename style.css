@@ -5,37 +5,71 @@
     Purpose: Design of the Calculator
 */
 
-.CalcBody{
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calcBody{
     width: 400px;
     height: 500px;
     border-color: black;
     border-style: solid;
     border-width: medium;
-    border-radius: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.CalcDisplay{
-    width: 350px;
-    height: 80px;
+.calcDisplay{
+    width: 320px;
+    height: 90px;
     border-color: black;
     border-style: solid;
     border-radius: 10px;
-    left: 20px;
-    top: 25px;
-    position: relative;
+    margin-top: 30px;
 }
 
-.CalcNumButton{
-    padding: 35px 35px;
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for each */
+    grid-gap: 10px; /* Gap between buttons */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 80%; /* Adjust the width as needed */
+    margin: auto;
+}
+
+.numButton, .symButton, .clearButton {
+    padding: 25px 25px;
     border-color: black;
     border-style: solid;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
 }
-.CalcNumButton:hover{
+
+.numButton:hover{
     background-color: orange;
 }
+.symButton:hover{
+    background-color: lightcoral; 
+}
+.clearButton:hover{
+    background-color: lightseagreen;
+}
+
+
+
