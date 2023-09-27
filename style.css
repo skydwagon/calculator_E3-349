@@ -21,7 +21,7 @@ body {
 .calcBody{
     width: 400px;
     height: 500px;
-    background-color: lightcoral;
+    background-image: linear-gradient(#2d2163, #0B032D);
     border-width: medium;
     border-radius: 20px;
     display: flex;
@@ -33,7 +33,8 @@ body {
 .calcDisplay{
     width: 320px;
     height: 90px;
-    background-color: beige;
+    background-image: linear-gradient(#433583, #2d2163);
+    color: beige;
     border-radius: 10px;
     margin-top: 30px;
 }
@@ -57,34 +58,40 @@ body {
 .one_num, .two_num, .three_num, .four_num, .five_num, 
 .six_num, .seven_num, .eight_num, .nine_num, .zero_num{
     padding: 25px 25px;
-    background-color: yellow;
+    background-image: linear-gradient(#843b62, #7e2755);
     border-radius: 10px;
+    color:beige;
 }
 
 .one_num:hover, .two_num:hover, .three_num:hover, 
 .four_num:hover, .five_num:hover, .six_num:hover,
 .seven_num:hover, .eight_num:hover, .nine_num:hover,
 .zero_num:hover{
-    background-color: orange;
+    background-image: linear-gradient(#621940, #7e2755);
+    box-shadow: 5px 5px black;
 }
 
 .plus_sym, .minus_sym, .mult_sym, .equal_sym, .divide_sym{
     padding: 25px 25px;
-    background-color: orange;
+    background-image: linear-gradient(#fca0a0, #F67E7D);
+    color: #0B032D;
     border-radius: 10px;
 }
 .plus_sym:hover, .minus_sym:hover, .mult_sym:hover,
 .equal_sym:hover, .divide_sym:hover{
-    background-color: yellow;
+    background-image: linear-gradient(#ff6464, #F67E7D);
+    box-shadow: 5px 5px black;
 }
 
 .clear_button{
     padding: 25px 25px;
-    background-color: red;
+    background-image: linear-gradient(#493a8d, #2d2163);
+    color: beige; 
     border-radius: 10px;
 }
 .clear_button:hover{
-    background-color: pink;
+    background-image: linear-gradient(#2a1d61, #2d2163);
+    box-shadow: 5px 5px black;
 }
 
 

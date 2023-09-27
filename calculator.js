@@ -4,3 +4,16 @@
     Cal State Fullerton
     Purpose: Calculator
 */
+
+function addition(){
+
+}
+function subtraction(){
+
+}
+function multiplication(){
+
+}
+function division(){
+    
+}
