@@ -21,8 +21,7 @@ body {
 .calcBody{
     width: 400px;
     height: 500px;
-    border-color: black;
-    border-style: solid;
+    background-color: lightcoral;
     border-width: medium;
     border-radius: 20px;
     display: flex;
@@ -34,42 +33,58 @@ body {
 .calcDisplay{
     width: 320px;
     height: 90px;
-    border-color: black;
-    border-style: solid;
+    background-color: beige;
     border-radius: 10px;
     margin-top: 30px;
 }
 
 .buttons{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns for each */
-    grid-gap: 10px; /* Gap between buttons */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 80%; /* Adjust the width as needed */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center; 
+    width: 80%; 
     margin: auto;
-}
-
-.numButton, .symButton, .clearButton {
-    padding: 25px 25px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.numButton:hover{
-    background-color: orange;
-}
-.symButton:hover{
-    background-color: lightcoral; 
-}
-.clearButton:hover{
-    background-color: lightseagreen;
+.one_num, .two_num, .three_num, .four_num, .five_num, 
+.six_num, .seven_num, .eight_num, .nine_num, .zero_num{
+    padding: 25px 25px;
+    background-color: yellow;
+    border-radius: 10px;
 }
 
+.one_num:hover, .two_num:hover, .three_num:hover, 
+.four_num:hover, .five_num:hover, .six_num:hover,
+.seven_num:hover, .eight_num:hover, .nine_num:hover,
+.zero_num:hover{
+    background-color: orange;
+}
+
+.plus_sym, .minus_sym, .mult_sym, .equal_sym, .divide_sym{
+    padding: 25px 25px;
+    background-color: orange;
+    border-radius: 10px;
+}
+.plus_sym:hover, .minus_sym:hover, .mult_sym:hover,
+.equal_sym:hover, .divide_sym:hover{
+    background-color: yellow;
+}
+
+.clear_button{
+    padding: 25px 25px;
+    background-color: red;
+    border-radius: 10px;
+}
+.clear_button:hover{
+    background-color: pink;
+}
 
 
